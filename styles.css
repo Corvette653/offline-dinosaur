@@ -1,0 +1,56 @@
+:root {
+	--animation-time:5s;
+}
+* {
+	margin: 0px;
+	background-color: #202124;
+	box-sizing: border-box;
+}
+#text {
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	text-align: center;
+	font-size: 2em;
+}
+#main {
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 200px;
+	border: 2px solid black;
+	position: relative;
+	overflow: hidden;
+	width: 1000px;
+}
+hr {
+	position: absolute;
+	width: 100%;
+	top: 190px;
+	height: 1px;
+	background-color: #acacac;
+	border: none;
+}
+#dinosaur {
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+}
+.injump {
+	animation: jump var(--animation-time) cubic-bezier(0.4, 0.2, 0.6, 1.0);
+}
+@keyframes jump {
+	0%{bottom: 0px;}  
+	50%{bottom: 100px;}
+	100%{bottom: 0px;}
+}
+.cactus {
+	position: absolute;
+	bottom: 0px;
+	right: -100px;	
+}
+@keyframes cactusMove {
+	0%{right: -100px;}
+	100%{right: 1100px;}
+}
